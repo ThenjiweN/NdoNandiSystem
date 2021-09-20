@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7f98f51e833f4a0f953b1871c7dd30ec" Name="Diagram1" ZoomLevel="80">
+        <EntityTypeShape EntityType="NdoNandiDBModel.Address" Width="1.5" PointX="2.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.Allergen" Width="1.5" PointX="7.5" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.BlogEntry" Width="1.5" PointX="7.5" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.City" Width="1.5" PointX="0.5" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.HairCondition" Width="1.5" PointX="0.5" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.HairDensity" Width="1.5" PointX="2.5" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.HairLength" Width="1.5" PointX="9.5" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.InventoryItem" Width="1.5" PointX="4.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.InventoryItemType" Width="1.5" PointX="2.5" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.Package" Width="1.5" PointX="4.5" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.Product" Width="1.5" PointX="7.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.ProductType" Width="1.5" PointX="5.5" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.Province" Width="1.5" PointX="0.5" PointY="6.25" IsExpanded="true" />
+        <AssociationConnector Association="NdoNandiDBModel.FK__Address__CityID__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="NdoNandiDBModel.FK__Address__Provinc__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="NdoNandiDBModel.FK__Inventory__TypeI__32E0915F" ManuallyRouted="false" />
+        <AssociationConnector Association="NdoNandiDBModel.FK__Product__TypeID__2E1BDC42" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.Suburb" Width="1.5" PointX="2.75" PointY="14.25" />
+        <AssociationConnector Association="NdoNandiDBModel.FK__Address__SuburbI__4316F928" />
+        <AssociationConnector Association="NdoNandiDBModel.FK__City__ProvinceID__3B75D760" />
+        <AssociationConnector Association="NdoNandiDBModel.FK__Suburb__CityID__3E52440B" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.Country" Width="1.5" PointX="0.5" PointY="9.25" />
+        <EntityTypeShape EntityType="NdoNandiDBModel.sysdiagram" Width="1.5" PointX="9.625" PointY="10.5" />
+        <AssociationConnector Association="NdoNandiDBModel.FK_Province_Country1" />
+        <AssociationConnector Association="NdoNandiDBModel.FK_Address_Country" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
