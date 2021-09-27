@@ -14,7 +14,7 @@ export class CreateProductComponent implements OnInit {
 
   productForm: any;   
 
-  constructor(private formbulider: FormBuilder, private router: Router, private apiService:ApiService) { }
+  constructor(private formbulider: FormBuilder, private router: Router, public apiService:ApiService) { }
 
 
   createProduct(product: Product) {  
@@ -26,6 +26,17 @@ export class CreateProductComponent implements OnInit {
   
   onBack(){
     this.router.navigate(['./product']);
+  }
+
+  selectProductType(ctrl) {
+    if (ctrl.selectedIndex == 0)
+    {
+      this.apiService.productData.TypeID = 0;
+    }
+    else 
+    {
+      this.apiService.productData.TypeID = this.apiService.typeList[ctrl.selectedIndex - 1].TypeID;
+    }
   }
 
   ngOnInit(): void {

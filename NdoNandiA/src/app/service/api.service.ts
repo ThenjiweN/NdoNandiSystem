@@ -25,6 +25,8 @@ import { Tutorials } from '../model/tutorials';
   providedIn: 'root'
 })
 export class ApiService {
+  productData: Product;
+  typeList: ProductType[];
   constructor(private http: HttpClient) { }
  
   //condition cruds
